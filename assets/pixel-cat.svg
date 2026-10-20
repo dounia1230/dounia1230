@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="210" viewBox="0 0 720 210" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Pixel cat coding at night</title>
+  <desc id="desc">An animated cream pixel cat types on a pink laptop while stars twinkle.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17152c"/>
+      <stop offset="0.52" stop-color="#282044"/>
+      <stop offset="1" stop-color="#3d2750"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#32263e"/>
+      <stop offset="0.5" stop-color="#4b3150"/>
+      <stop offset="1" stop-color="#32263e"/>
+    </linearGradient>
+    <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="712" height="202" rx="20" fill="url(#sky)" stroke="#6f527d" stroke-width="4"/>
+  <rect x="20" y="20" width="680" height="168" fill="none" stroke="#4c3b63" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- pixel clouds -->
+  <g fill="#403457" opacity="0.78">
+    <rect x="60" y="54" width="56" height="8"/><rect x="76" y="46" width="28" height="8"/>
+    <rect x="570" y="72" width="72" height="8"/><rect x="590" y="64" width="32" height="8"/>
+  </g>
+
+  <!-- twinkling stars -->
+  <g fill="#ffe6a7">
+    <path d="M78 28h6v6h6v6h-6v6h-6v-6h-6v-6h6z">
+      <animate attributeName="opacity" values=".25;1;.25" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M178 62h4v4h4v4h-4v4h-4v-4h-4v-4h4z">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M530 34h5v5h5v5h-5v5h-5v-5h-5v-5h5z">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M660 44h4v4h4v4h-4v4h-4v-4h-4v-4h4z">
+      <animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#f5b5d0">
+    <rect x="126" y="92" width="5" height="5"><animate attributeName="opacity" values=".2;1;.2" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="610" y="28" width="5" height="5"><animate attributeName="opacity" values="1;.2;1" dur="1.9s" repeatCount="indefinite"/></rect>
+    <rect x="488" y="78" width="4" height="4"><animate attributeName="opacity" values=".3;1;.3" dur="1.5s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- moon -->
+  <g transform="translate(96 20)">
+    <rect x="0" y="8" width="8" height="32" fill="#ffe6aa"/>
+    <rect x="8" y="0" width="24" height="48" fill="#ffe6aa"/>
+    <rect x="32" y="8" width="8" height="32" fill="#ffe6aa"/>
+    <rect x="24" y="0" width="16" height="16" fill="#282044"/>
+  </g>
+
+  <!-- desk and mug -->
+  <rect x="28" y="164" width="664" height="12" fill="url(#desk)"/>
+  <rect x="44" y="176" width="632" height="12" fill="#241c31"/>
+  <g transform="translate(550 128)">
+    <rect x="0" y="8" width="28" height="28" fill="#c5f3df"/>
+    <rect x="28" y="14" width="8" height="16" fill="none" stroke="#c5f3df" stroke-width="6"/>
+    <rect x="6" y="14" width="16" height="4" fill="#5f987f"/>
+    <path d="M8 4h4v-8h4v8h4v-8h4v8" fill="none" stroke="#d8c9ef" stroke-width="3" opacity=".6">
+      <animate attributeName="opacity" values=".15;.7;.15" dur="2.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- cat -->
+  <g transform="translate(242 68)">
+    <!-- tail wiggle -->
+    <g transform="translate(12 62)">
+      <path d="M0 34h-22v-8h-12V10h8v10h12V8h8v26z" fill="#e9c9ad">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 34;-8 0 34;0 0 34;6 0 34;0 0 34" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+      <rect x="-34" y="10" width="8" height="10" fill="#bc8f86"/>
+    </g>
+
+    <!-- body -->
+    <rect x="18" y="54" width="72" height="50" fill="#e9c9ad"/>
+    <rect x="26" y="44" width="56" height="68" fill="#f4ddc2"/>
+    <rect x="18" y="98" width="72" height="14" fill="#c99f91"/>
+
+    <!-- head and ears -->
+    <rect x="18" y="18" width="72" height="50" fill="#f4ddc2"/>
+    <path d="M18 18V0h10l14 18zm72 0V0H80L66 18z" fill="#e9c9ad"/>
+    <path d="M23 14V6h6l7 8zm62 0V6h-6l-7 8z" fill="#d99aaa"/>
+
+    <!-- face -->
+    <g fill="#493447">
+      <rect x="34" y="34" width="8" height="10">
+        <animate attributeName="height" values="10;10;2;10;10" keyTimes="0;.45;.5;.55;1" dur="3.4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="66" y="34" width="8" height="10">
+        <animate attributeName="height" values="10;10;2;10;10" keyTimes="0;.45;.5;.55;1" dur="3.4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="51" y="46" width="8" height="6" fill="#bd718d"/>
+      <rect x="46" y="54" width="6" height="4"/><rect x="58" y="54" width="6" height="4"/>
+    </g>
+    <rect x="24" y="48" width="9" height="5" fill="#eda6af" opacity=".75"/>
+    <rect x="77" y="48" width="9" height="5" fill="#eda6af" opacity=".75"/>
+
+    <!-- paws typing -->
+    <g fill="#f4ddc2">
+      <rect x="32" y="82" width="18" height="12">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur=".55s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="68" y="82" width="18" height="12">
+        <animateTransform attributeName="transform" type="translate" values="0 4;0 0;0 4" dur=".55s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- laptop -->
+  <g transform="translate(338 104)">
+    <rect x="0" y="0" width="122" height="62" rx="3" fill="#f4a6c4" stroke="#7d4b75" stroke-width="4"/>
+    <rect x="8" y="8" width="106" height="44" fill="#312543"/>
+    <rect x="17" y="18" width="28" height="5" fill="#c5f3df">
+      <animate attributeName="width" values="8;28;14;36;8" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="17" y="29" width="45" height="5" fill="#cbb7ff">
+      <animate attributeName="width" values="38;18;45;28;38" dur="2.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="17" y="40" width="34" height="5" fill="#ffe6a7">
+      <animate attributeName="width" values="16;34;22;42;16" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-12" y="62" width="146" height="9" fill="#cc83a7"/>
+    <rect x="42" y="62" width="38" height="4" fill="#8b557f"/>
+    <rect x="53" y="22" width="16" height="16" fill="#f4a6c4" opacity=".16" filter="url(#pinkGlow)">
+      <animate attributeName="opacity" values=".08;.28;.08" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- plant -->
+  <g transform="translate(154 116)">
+    <rect x="14" y="28" width="28" height="36" fill="#b47a93"/>
+    <rect x="8" y="24" width="40" height="8" fill="#d79bb5"/>
+    <rect x="26" y="2" width="6" height="24" fill="#79b39c"/>
+    <rect x="8" y="6" width="20" height="9" fill="#86c7aa"/>
+    <rect x="30" y="0" width="20" height="9" fill="#a2d5bc"/>
+    <rect x="34" y="13" width="18" height="8" fill="#79b39c"/>
+  </g>
+
+  <!-- floating pixel hearts -->
+  <g fill="#f4a6c4">
+    <path d="M496 112h6v-6h12v6h6v12h-6v6h-6v6h-6v-6h-6v-6h-6v-12z">
+      <animateTransform attributeName="transform" type="translate" values="0 8;0 -6;0 8" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
