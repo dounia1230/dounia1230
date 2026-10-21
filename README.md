@@ -61,7 +61,7 @@ dounia = {
 ### `> github_stats/`
 
 <div align="center">
-  <img height="155" src="https://github-readme-stats.vercel.app/api?username=dounia1230&show_icons=true&hide_border=true&bg_color=0d1117&title_color=f4a6c4&icon_color=c4b5fd&text_color=c9d1d9&rank_icon=github" alt="Dounia's GitHub statistics" />
+  <a href="https://github.com/dounia1230?tab=overview"><img height="155" src="./assets/github-stats.svg" alt="Dounia's GitHub statistics, including contributions in the last year; refreshed daily from GitHub" /></a>
   <img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dounia1230&layout=compact&hide_border=true&bg_color=0d1117&title_color=f4a6c4&text_color=c9d1d9" alt="Dounia's most used languages" />
 </div>
 
